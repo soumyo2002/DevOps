@@ -1,0 +1,29 @@
+Git is a version control system that developers use to keep track of different versions of their code and also use it to collaborate with other developers.
+Having a saved history of the changes made in a code is essential specially when their is a bug in the code.
+One can easily check the changes made at every point and fix the bug efficiently.
+
+What is Github?
+Github is an online platform that allows us to host our Git projects on cloud.
+Git and Github are not the same. 
+Git is a version control system that stores our version history whereas Github is an online platform that hosts our git projects on cloud.
+There are many online sites like GitHub which allows us to host, such as Bitbucket and GitLab.
+
+Basic linux commands:
+mkdir-->Command to create a directory
+   ls-->Command to view a folder 
+ls -a-->Command to view hidden folder
+touch-->Command to create a file
+
+I will be using Gitbash for command line operation of git.
+-When using git for the first time, set the global configs using the commands:
+$ git config --global user.name "your_name"
+$ git config --global user.email your_email
+
+Where does Git store our version history?
+Git stores the version history in a hidden folder .git which is made when we initialize it using git init command.
+The folder is hidden and to view it we have to use ls-a command which is used to view hidden files in a folder.
+
+
+What is Git repository?
+The repository is the .git folder inside our project folder. It will track all the changes made to the files in our project and record it over time.
+To view what is inside the .git folder we can use the ls .git command to view it.
