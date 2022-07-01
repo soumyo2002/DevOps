@@ -13,7 +13,9 @@ mkdir-->Command to create a directory
    ls-->Command to view a folder 
 ls -a-->Command to view hidden folder
 touch-->Command to create a file
-
+vim  -->Command to open a file(Note: To start writing first press (Shift+I) to enter insert mode and then to exit and save press(Press Esc and then type :x and then press Enter)
+cat  -->Command that displays contents of the files
+rm   -->Command to remove a file
 I will be using Gitbash for command line operation of git.
 -When using git for the first time, set the global configs using the commands:
 $ git config --global user.name "your_name"
@@ -27,3 +29,37 @@ The folder is hidden and to view it we have to use ls-a command which is used to
 What is Git repository?
 The repository is the .git folder inside our project folder. It will track all the changes made to the files in our project and record it over time.
 To view what is inside the .git folder we can use the ls .git command to view it.
+
+How to know if changes made to a file is being tracked or not?
+For that we first have to we have to enter command git status. This command will show us if our files are being trackked or not and whether its changes will be known to others 
+if I share my code. Now if the file is not being tracked then we use git add command to start tracking the files.There are two ways to use the command:
+
+1)$ git add . 
+This command will start tracking all the files in the directory
+
+2)$ git add filename
+This command will start tracking only that particular file.
+
+We can also add a message at the end using $ git commit -m "file is being tracked now"
+
+Now that all our files are being tracked,if we use the command $ git status again,since there is no untracked files now it will show:
+"On branch master
+nothing to commit, working tree clean"
+
+What if by mistake you made a commit and want to untrack the changes made
+For that we have to use the command $ git restore --staged filename. After that if you check git status you will find that the files is not being tracked anymore.
+
+Now to check the entire history of the changes made can be viewed using command $ git log.
+
+Now lets understand how to restore a particular version of the code we want to in git. Suppose we want to restore a particular version of a code because we made
+certain changes by mistake and want to return to the original code. steps to do that
+
+1)Use the command $ git log
+
+2)select the commit you want to restore and then copy the alphanumeric code beside commit
+
+3)Now to restore that version use the command $git reset alphanumeric code
+
+4)Now check $ git log
+
+NOTE:Ctrl+C and Ctrl+V won't work on Bash terminal,so use left click the mouse to copy and right click to paste
