@@ -1,14 +1,17 @@
+# Git and GitHub
+
+## What is Git?
 Git is a version control system that developers use to keep track of different versions of their code and also use it to collaborate with other developers.
 Having a saved history of the changes made in a code is essential specially when their is a bug in the code.
 One can easily check the changes made at every point and fix the bug efficiently.
 
-What is Github?
+## What is Github?
 Github is an online platform that allows us to host our Git projects on cloud.
 Git and Github are not the same. 
 Git is a version control system that stores our version history whereas Github is an online platform that hosts our git projects on cloud.
 There are many online sites like GitHub which allows us to host, such as Bitbucket and GitLab.
 
-Basic linux commands:
+## Basic linux commands:
 mkdir-->Command to create a directory
    ls-->Command to view a folder 
 ls -a-->Command to view hidden folder
@@ -21,16 +24,16 @@ I will be using Gitbash for command line operation of git.
 $ git config --global user.name "your_name"
 $ git config --global user.email your_email
 
-Where does Git store our version history?
+## Where does Git store our version history?
 Git stores the version history in a hidden folder .git which is made when we initialize it using git init command.
 The folder is hidden and to view it we have to use ls-a command which is used to view hidden files in a folder.
 
 
-What is Git repository?
+## What is Git repository?
 The repository is the .git folder inside our project folder. It will track all the changes made to the files in our project and record it over time.
 To view what is inside the .git folder we can use the ls .git command to view it.
 
-How to know if changes made to a file is being tracked or not?
+## How to know if changes made to a file is being tracked or not?
 For that we first have to we have to enter command git status. This command will show us if our files are being trackked or not and whether its changes will be known to others 
 if I share my code. Now if the file is not being tracked then we use git add command to start tracking the files.There are two ways to use the command:
 
@@ -58,7 +61,7 @@ certain changes by mistake and want to return to the original code. steps to do 
 
 2)select the commit you want to restore and then copy the alphanumeric code beside commit
 
-3)Now to restore that version use the command $git reset alphanumeric code
+3)Now to restore that version use the command $git reset (paste the alphanumeric code)
 
 4)Now check $ git log
 
