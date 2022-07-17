@@ -66,3 +66,5 @@ certain changes by mistake and want to return to the original code. steps to do 
 4)Now check $ git log
 
 NOTE:Ctrl+C and Ctrl+V won't work on Bash terminal,so use left click the mouse to copy and right click to paste
+
+# This is an heading
